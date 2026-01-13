@@ -942,7 +942,6 @@ def get_fwd_blobs(
                     cond &= pipeline.F_vlayout == "row"
                     cond &= pipeline.F_bias in ["no", "bias"]
                     cond &= pipeline.F_squant == "f"
-                    cond &= mode == "batch"
                     cond &= pipeline.F_skip == "f"
                     cond &= pipeline.F_logits == "f"
                     if not cond:
